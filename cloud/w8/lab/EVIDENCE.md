@@ -1,6 +1,6 @@
 # W8 K8s Challenge Lab - Deployment Evidence
 
-**Student**: ptduong04  
+**Student**: Pham Tung Duong / XB-DN26-105  
 **Lab**: Week 8 - Kubernetes on AWS with Terraform  
 
 ---
@@ -15,7 +15,7 @@
 
 ## Evidence: Browser Screenshot
 
-![Browser Evidence](.\asset\terraform_apply_complete.jpg)
+![Browser Evidence](./asset/terraform_apply_complete.jpg)
 
 **Screenshot shows:**
 - ALB DNS name visible in URL bar
@@ -28,7 +28,7 @@
 
 ## Infrastructure Architecture Diagram
 
-![Diagram Evidence](.\asset\Diagram.jpg)
+![Diagram Evidence](./asset/Diagram.jpg)
 
 **Traffic flow**: Internet User → IGW → ALB :80 → EC2 :30080 → port-forward → xbrain-service :80 → 2 Nginx Pods
 
@@ -161,6 +161,3 @@ terraform destroy -auto-approve
 
 ---
 
-**Deployment Date**: June 4, 2026  
-**Status**: **PRODUCTION READY**  
-**Evidence Collected By**: ptduong04
