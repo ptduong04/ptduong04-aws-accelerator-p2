@@ -42,3 +42,15 @@ provider "kubernetes" {
   # Hiện tại để empty vì cluster chưa tồn tại
   config_path = "~/.kube/config"
 }
+
+# ============================================
+# Random Provider Configuration
+# ============================================
+provider "random" {
+  # Random provider không cần configuration
+  # Dùng để generate random values (IDs, strings, passwords...)
+  # Use cases trong project:
+  #   - Generate unique suffix cho resource naming
+  #   - Tránh naming conflicts khi nhiều người deploy
+  #   - Ví dụ: random_id.suffix tạo "7c440e" để append vào tên resources
+}
